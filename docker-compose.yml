@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nest-app:
+    build: .
+    container_name: nest-app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
